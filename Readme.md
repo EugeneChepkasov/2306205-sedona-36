@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Eugene Chepkasov](https://up.htmlacademy.ru/htmlcss/36/user/2306205).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко] (https://htmlacademy.ru/profile/tatien).
 
 ---
 
