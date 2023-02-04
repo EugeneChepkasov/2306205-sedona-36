@@ -8,7 +8,11 @@
   <body>
     <header class="main-header">
       <a title="Мы уже на главной">
-        <img src="#" alt="Логотип Седона" class="logo-header">
+        <img
+          src="images\logo-sedona.svg"
+          alt="Логотип Седона"
+          class="logo-header"
+        />
       </a>
 
       <nav class="navigation">
@@ -40,18 +44,19 @@
 
         <ul class="navigation-user">
           <li class="navigation-item">
-            <a href="" class="navigation-link">
-              <img src="#" alt="Иконка поиска" class="navigation-icon">
+            <a href="" class="navigation-link search">
+              <span class="visually-hidden">Иконка поиска</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item favorites">
             <a
               class="navigation-link"
               href="#"
               title="Мои избранные гостиницы в Седоне"
             >
-              <img src="#" alt="Иконка избранное" class="navigation-icon" />
+              <span class="visually-hidden">Иконка избранного</span>
             </a>
+            <span class="navigation-favorites-result">12</span>
           </li>
           <li class="navigation-item">
             <a
@@ -70,14 +75,12 @@
       <h1 class="visually-hidden">Сайт города Седона (США)</h1>
 
       <section class="index-cover">
-        <img
-          src="#"
-          alt="Красивые виды гор в Седоне"
-          class="index-cover-background"
-        />
+        <span class="visually-hidden">Красивые виды гор в Седоне</span>
 
         <img
-          src="#"
+          src="images\cover-welcome.svg"
+          width="458"
+          height="352"
           alt="Добро пожаловать в великолепную Седону"
           class="index-cover-welcome"
         />
@@ -99,10 +102,12 @@
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
             <img
-            src="#"
-            alt="Седона: городской пейзаж"
-            class="advantages-photo-right"
-          />
+              src="images\advantages-1.jpg"
+              width="800"
+              height="384"
+              alt="Седона: городской пейзаж"
+              class="advantages-photo-right"
+            />
           </li>
 
           <li class="advanages-item side-item">
@@ -131,8 +136,10 @@
 
           <li class="advanages-item right-img-item">
             <img
-              src="#"
+              src="images\advantages-2.jpg"
               alt="Седона: горный пейзаж"
+              width="800"
+              height="384"
               class="advantages-photo-left"
             />
             <h3 class="advantages-title white-title">Там есть мост дьявола</h3>
@@ -153,24 +160,21 @@
         </p>
 
         <ul class="services-list">
-          <li class="services-item side-item">
-            <img src="#" alt="Иконка жилье" class="services-icon">
+          <li class="services-item housing">
             <h3 class="advantages-title">Жильё</h3>
             <p class="services-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
 
-          <li class="services-item center-item">
-            <img src="#" alt="Иконка еда" class="services-icon">
+          <li class="services-item food">
             <h3 class="advantages-title">Еда</h3>
             <p class="services-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
 
-          <li class="services-item side-item">
-            <img src="#" alt="Иконка сувениры" class="services-icon">
+          <li class="services-item souvenir">
             <h3 class="advantages-title">Сувениры</h3>
             <p class="services-description">
               Не только китайского, но и настоящего местного производства!
@@ -209,52 +213,42 @@
           <input type="submit" />
         </form>
       </section>
-
     </main>
 
     <footer class="main-footer">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <section class="contacts">
-        <h3 class="visually-hidden">Мы в соцсетях</h3>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a
-              href="#"
-              class="button vk-button"
-              title="Наша страницв Вконтакте"
-            >
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
 
-          <li class="footer-social-item">
-            <a href="#" class="button tg-button" title="Перейти в телеграм">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
+      <h3 class="visually-hidden">Мы в соцсетях</h3>
+      <ul class="footer-social-list">
+        <li class="footer-social-item vk">
+          <a href="#" title="Наша страницв Вконтакте">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
 
-          <li class="footer-social-item">
-            <a
-              href="#"
-              class="button youtube-button"
-              title="Смотри нас на ютубе"
-            >
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
+        <li class="footer-social-item telegram">
+          <a href="#" title="Перейти в телеграм">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
 
-        <h3 class="visually-hidden">Наш телефон</h3>
-        <address class="footer-phone-number">
-          <a href="tel:78128121212" title="Нажми и звони +7 (812) 812-12-12"
-            >+7 (812) 812-12-12</a
-          >
-        </address>
+        <li class="footer-social-item youtube">
+          <a href="#" title="Смотри нас на ютубе">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
 
-        <a href="https://htmlacademy.ru">
-          <img src="#" alt="Логотип HTML Академии" class="logo-htmlacademy" />
-        </a>
-      </section>
+      <h3 class="visually-hidden">Наш телефон</h3>
+      <address class="footer-phone-number">
+        <a href="tel:78128121212" title="Нажми и звони +7 (812) 812-12-12"
+          >+7 (812) 812-12-12</a
+        >
+      </address>
+
+      <a href="https://htmlacademy.ru">
+        <img src="images\logo-HTML Academy.svg" width="115" height="33" alt="Логотип HTML Академии" class="logo-htmlacademy" />
+      </a>
     </footer>
   </body>
 </html>
