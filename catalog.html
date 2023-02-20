@@ -55,13 +55,13 @@
               title="Мои избранные гостиницы в Седоне"
             >
               <span class="visually-hidden">Иконка избранного</span>
+              <span class="navigation-favorites-result">12</span>
             </a>
-            <span class="navigation-favorites-result">12</span>
           </li>
 
           <li class="navigation-item">
             <a
-              class="button"
+              class="button button-want"
               href="catalog.html"
               title="Поиск гостиницы в Седоне"
               >Хочу сюда
@@ -71,16 +71,21 @@
       </nav>
     </header>
 
+
     <main class="main-inner">
-      <!-- Cover Search -->
+
       <section class="cover-seach-hotels">
         <header class="inner-header">
           <h1 class="inner-cover-title">Гостиницы Седоны</h1>
 
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-home">
+            <li class="breadcrumbs-icon">
               <a href="index.html" title="Главная" class="breadcrumbs-link">
+                <img src="images/icon-homepage.svg" width="12"  height="12" alt="Домой">
               </a>
+            </li>
+            <li class="breadcrumbs-icon">
+              <img src="images/pointer.svg" width="7px" height="10px">
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -88,6 +93,7 @@
           </ul>
         </header>
 
+      <!-- Cover Search -->
         <h2 class="visually-hidden">Выбрать гостиницы по параметрам</h2>
 
         <form
@@ -211,26 +217,31 @@
               Применить или сбросить фильтр
             </legend>
 
-            <button class="button-apply" type="submit">Применить</button>
-            <button class="button-reset" type="submit">Сбросить</button>
+            <button class="button button-apply" type="submit">Применить</button>
+            <button class="button button-reset" type="submit">Сбросить</button>
           </fieldset>
         </form>
       </section>
+
 
       <!-- Hotels Catalog. Search result -->
       <section class="hotels">
         <h2 class="visually-hidden">Подобрать подходящую гостиницу</h2>
 
         <header class="hotels-header">
-          <p class="common-title search-title">
+
+          <span class="search-title">
             Найдено гостиниц:<span class="search-result">38</span>
-          </p>
+          </span>
+
+
           <select class="hotels-select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
 
+          <div class="sorting">
           <a class="cards" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
@@ -240,6 +251,7 @@
           <a href="#" class="cards-list">
             <span class="visually-hidden">Показать список</span>
           </a>
+          </div>
         </header>
 
         <ul class="hotels-list">
@@ -260,8 +272,8 @@
             </div>
 
             <div>
-              <a class="button-detailes" href="#">Подробнее</a>
-              <button class="button-favorites" name="favorites" type="button">
+              <a class="button button-detailes" href="#">Подробнее</a>
+              <button class="button button-favorites" name="favorites" type="button">
                 В избранное
               </button>
             </div>
@@ -287,8 +299,8 @@
             </div>
 
             <div>
-              <a class="button-detailes" href="#">Подробнее</a>
-              <button class="button-favorites" name="favorites" type="button">
+              <a class="button button-detailes" href="#">Подробнее</a>
+              <button class="button button-favorites" name="favorites" type="button">
                 В избранное
               </button>
             </div>
@@ -314,8 +326,8 @@
             </div>
 
             <div>
-              <a class="button-detailes" href="#">Подробнее</a>
-              <button class="button-favorites" name="favorites" type="button">
+              <a class="button button-detailes" href="#">Подробнее</a>
+              <button class="button button-favorites" name="favorites" type="button">
                 В избранное
               </button>
             </div>
@@ -341,8 +353,8 @@
             </div>
 
             <div>
-              <a class="button-detailes" href="#">Подробнее</a>
-              <button class="button-favorites" name="favorites" type="button">
+              <a class="button button-detailes" href="#">Подробнее</a>
+              <button class="button button-favorites" name="favorites" type="button">
                 В избранное
               </button>
             </div>
@@ -352,6 +364,8 @@
           </li>
         </ul>
 
+
+       <!-- Subscribe -->
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
@@ -388,8 +402,9 @@
       <section class="subscribe-white">
         <h2 class="common-title">Подпишитесь на рассылку</h2>
         <p class="common-paragraf">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама, <br>честное бойскаутское!
         </p>
+
         <form
           action="https://echo.htmlacademy.ru/courses"
           method="post"
@@ -399,9 +414,9 @@
             type="email"
             name="email"
             placeholder="Ваш e-mail"
-            class="field-email"
+            class="field-email grey-field"
           />
-          <input type="submit" />
+          <input type="submit" class="button subscribe-button" value="Подписаться"/>
         </form>
       </section>
     </main>
