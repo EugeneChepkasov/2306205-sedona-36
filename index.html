@@ -10,33 +10,37 @@
 
     <!-- Header -->
     <header class="main-header">
-      <a title="Мы уже на главной">
+
+      <a href="#" title="Мы уже на главной" class="logo-header">
         <img
           src="images/logo-sedona.svg"
           alt="Логотип Седона"
-          class="logo-header"
-        />
+          width="140"
+          height="70"
+          />
       </a>
 
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link" title="Мы уже на главной"
+          <li>
+            <a href="#"
+            class="navigation-list-link"
+            title="Мы уже на главной"
               >Главная</a
             >
           </li>
-          <li class="navigation-item">
+          <li>
             <a
-              href="about.html"
-              class="navigation-link"
+              href="#"
+              class="navigation-list-link"
               title="Узнать о Седоне больше"
               >О Седоне</a
             >
           </li>
-          <li class="navigation-item">
+          <li>
             <a
               href="catalog.html"
-              class="navigation-link"
+              class="navigation-list-link"
               title="Выбрать гостиницу в Седоне"
               >Гостиницы</a
             >
@@ -44,14 +48,14 @@
         </ul>
 
         <ul class="navigation-user">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link search" title="Найти отель"> </a>
+          <li>
+            <a href="#" class="navigation-user-link search" title="Найти отель"> </a>
             <span class="visually-hidden">Иконка поиска</span>
           </li>
 
-          <li class="navigation-item">
+          <li>
             <a
-              class="navigation-link favorites"
+              class="navigation-user-link favorites"
               href="#"
               title="Мои избранные гостиницы в Седоне"
             >
@@ -60,7 +64,7 @@
             </a>
           </li>
 
-          <li class="navigation-item">
+          <li>
             <a
               class="button button-want"
               href="catalog.html"
@@ -71,6 +75,8 @@
         </ul>
       </nav>
     </header>
+
+
 
     <main class="main-index">
       <h1 class="visually-hidden">Сайт города Седона (США)</h1>
@@ -83,19 +89,24 @@
           class="index-cover-welcome"
           src="images/cover-welcome.svg"
           alt="Добро пожаловать в великолепную Седону"
+          width="456"
+          height="351"
         />
         <img
-        class="cover-stairs"
         src="images/white-stairs.svg"
+        width="1200"
+        height="57"
         />
       </section>
+
+
 
       <!-- Advantages -->
       <section class="advantages">
 
-        <div class="come-to-sedona">
+        <div class="small-town">
         <h2 class="common-title">
-          Седона — небольшой городок в Аризоне, <br />
+          Седона — небольшой городок в Аризоне,
           заслуживающий большего!
         </h2>
         <p class="common-paragraf">
@@ -121,7 +132,7 @@
               src="images/advantages-1.jpg"
               alt="Седона: городской пейзаж"
               width="800"
-              height="384"
+              height="385"
             />
           </li>
 
@@ -134,7 +145,7 @@
           </li>
 
           <li class="advantages-item darkblue-background">
-            <h3 class="item-title">Красивая дорога</h3>
+            <h3 class="item-title">Красивая <br>дорога</h3>
             <hr class="advantages-separator" />
             <p class="item-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -142,7 +153,7 @@
           </li>
 
           <li class="advantages-item blue-background">
-            <h3 class="item-title">Мало туристов</h3>
+            <h3 class="item-title">Мало <br>туристов</h3>
             <hr class="advantages-separator" />
             <p class="item-description">
               Большинство едет в Гранд Каньон и толпится там
@@ -154,12 +165,12 @@
               src="images/advantages-2.jpg"
               alt="Седона: горный пейзаж"
               width="800"
-              height="384"
+              height="385"
               >
           </li>
 
           <li class="advantages-item side-advantages">
-            <h3 class="item-title white">Там есть мост дьявола</h3>
+            <h3 class="item-title white">Там есть <br>мост дьявола</h3>
             <hr class="advantages-separator white" />
             <p class="item-description white">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -169,11 +180,12 @@
         </ul>
       </section>
 
+
       <!-- Services -->
       <section class="services">
         <div class="come-to-sedona">
         <h2 class="common-title">
-          Приезжайте в Седону отдохнуть <br>в комфорте и уюте!
+          Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h2>
         <p class="common-paragraf">
           Опытный персонал и качественное обслуживание!
@@ -188,9 +200,9 @@
             width="75"
             height="72"
             >
-            <h3 class="item-title">Жильё</h3>
+            <h3 class="item-title services-title">Жильё</h3>
             <p class="item-description">
-              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              Рекомендуем пожить <br>в настоящем мотеле,<br>всё как в кино!
             </p>
           </li>
 
@@ -201,9 +213,9 @@
             width="74"
             height="70"
             >
-            <h3 class="item-title">Еда</h3>
+            <h3 class="item-title services-title">Еда</h3>
             <p class="item-description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте топовый фирменный бургер, <br>вы не разочаруетесь!
             </p>
           </li>
 
@@ -214,9 +226,9 @@
             width="64"
             height="76"
             >
-            <h3 class="item-title">Сувениры</h3>
+            <h3 class="item-title services-title">Сувениры</h3>
             <p class="item-description">
-              Не только китайского, но и настоящего местного производства!
+              Не только китайского, <br>но и настоящего местного производства!
             </p>
           </li>
         </ul>
@@ -300,7 +312,6 @@
           width="115"
           height="33"
           alt="Логотип HTML Академии"
-          class="logo-htmlacademy"
         />
       </a>
     </footer>
