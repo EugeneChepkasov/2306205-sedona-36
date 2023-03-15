@@ -843,9 +843,6 @@ justify-self: start;
 }
 
 
-.subscribe-form:hover {
-  fill: #E6E6E6
-}
 
 .subscribe-button {
   font-size: 20px;
@@ -861,7 +858,7 @@ justify-self: start;
   flex-grow: 1;
   border-radius: 5px 0 0 5px;
   font-size: 18px;
-  fill: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 
