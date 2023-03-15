@@ -251,13 +251,13 @@ color: #83B3D3;
   align-items: center;
   background-color: #83B3D3;
   position: relative;
+  background-image: url("../images/cover-background.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  padding: 51px 0 0 0;
+  box-sizing: border-box;
 }
-
-.index-cover-welcome {
-  position: absolute;
-  top: 52px;
-}
-
 
 
 .index-cover::after {
@@ -843,6 +843,10 @@ justify-self: start;
 }
 
 
+.subscribe-form:hover {
+  fill: #E6E6E6
+}
+
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
@@ -857,7 +861,7 @@ justify-self: start;
   flex-grow: 1;
   border-radius: 5px 0 0 5px;
   font-size: 18px;
-  background-color: #F2F2F2;
+  fill: #F2F2F2;
 }
 
 
